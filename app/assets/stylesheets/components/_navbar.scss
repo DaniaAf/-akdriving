@@ -1,5 +1,4 @@
 .navbar-lewagon {
-  justify-content: space-between;
   background: transparent;
 }
 
@@ -9,4 +8,12 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-right: 20px;
 }
