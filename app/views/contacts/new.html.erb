@@ -1,0 +1,29 @@
+<h1>new</h1>
+<h1>Votre demande</h1>
+
+<div class="contact-form">
+  <%= form_for @contact do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, required: true, placeholder: " Nom Prénom" %>
+
+    <br>
+
+    <%= f.label :email %><br>
+    <%= f.email_field :email, required: true, placeholder: " votre-email@email.com" %>
+
+    <br>
+
+    <%= f.label :message %><br>
+    <%= f.text_area :message, as: :text, required: true, placeholder: " Votre message" %>
+
+    <br>
+
+    <div class="hidden">
+      <%= f.label :nickname %><br>
+      <%= f.text_field :nickname, hint: 'leave this field blank' %>
+    </div>
+
+    <%= f.submit 'Envoyer Message', class: "btn btn-primary" %>
+
+  <% end %>
+</div>
